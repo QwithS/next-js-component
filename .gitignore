@@ -1,1 +1,21 @@
-node_modules
+# Project specifics
+google-credential.json
+.env.local
+
+# NodeJS
+node_modules/
+
+# NextJS
+.next/
+
+# Storybook
+storybook-static/
+
+# IDE: VSCode
+.vscode/launch.json
+
+# IDE: misc.
+*.swp
+
+# OS: Mac OS
+.DS_Store
