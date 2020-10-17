@@ -1,9 +1,10 @@
 {
-  "name": "next-component",
-  "version": "0.1.0",
+  "name": "copying-twitter",
+  "version": "1.0.0",
   "private": true,
+  "description": "Copying twitter using React",
   "scripts": {
-    "dev": "next",
+    "dev": "next dev -p 3001",
     "build": "next build",
     "start": "next start",
     "lint": "eslint --fix --ext js,jsx ."
