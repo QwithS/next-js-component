@@ -1,3 +1,6 @@
-export default function Home(): string {
-  return "merong";
+import NavBarComponent from "./components/NavBarComponent";
+import React from "react";
+
+export default function Home(): React.ReactElement {
+  return <NavBarComponent />;
 }
