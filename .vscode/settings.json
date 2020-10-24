@@ -15,5 +15,8 @@
     },
     "[markdown]": {
       "editor.formatOnSave": false
-    }
-  }
+    },
+    "files.associations": {
+      "*.svg": "html"
+    },
+}
