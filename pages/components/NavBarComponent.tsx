@@ -11,60 +11,32 @@ import ProfileIcon from "public/img/nav-bar/profile.svg";
 import React from "react";
 
 export default function NavBarComponent(): React.ReactElement {
+  const navList = [
+    { title: "홈", img: <HomeIcon /> },
+    { title: "탐색하기", img: <ExploreIcon /> },
+    { title: "알림", img: <NotiIcon /> },
+    { title: "쪽지", img: <MsgIcon /> },
+    { title: "북마크", img: <BookMarkIcon /> },
+    { title: "리스트", img: <ListIcon /> },
+    { title: "프로필", img: <ProfileIcon /> },
+    { title: "더 보기", img: <MoreIcon /> },
+  ];
+
   return (
     <div>
       <LogoIcon className={styles.logo} />
       <nav>
-        <a>
-          <div className={styles.contentsWrapper}>
-            <HomeIcon />홈
-          </div>
-        </a>
-
-        <a>
-          <div className={styles.contentsWrapper}>
-            <ExploreIcon />
-            탐색하기
-          </div>
-        </a>
-        <a>
-          <div className={styles.contentsWrapper}>
-            <NotiIcon />
-            알림
-          </div>
-        </a>
-        <a>
-          <div className={styles.contentsWrapper}>
-            <MsgIcon />
-            쪽지
-          </div>
-        </a>
-        <a>
-          <div className={styles.contentsWrapper}>
-            <BookMarkIcon />
-            북마크
-          </div>
-        </a>
-        <a>
-          <div className={styles.contentsWrapper}>
-            <ListIcon />
-            리스트
-          </div>
-        </a>
-        <a>
-          <div className={styles.contentsWrapper}>
-            <ProfileIcon />
-            프로필
-          </div>
-        </a>
-        <a>
-          <div className={styles.contentsWrapper}>
-            <MoreIcon />
-            더보기
-          </div>
-        </a>
+        {navList.map((navItem, i) => (
+          <a key={i} className={styles.navItem}>
+            <div className={styles.contentsWrapper}>
+              {navItem.img}
+              <div className={styles.titleWrapper}>
+                <span>{navItem.title}</span>
+              </div>
+            </div>
+          </a>
+        ))}
       </nav>
-      <div>트윗</div>
     </div>
   );
 }
