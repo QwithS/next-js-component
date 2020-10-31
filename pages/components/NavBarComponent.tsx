@@ -24,14 +24,19 @@ export default function NavBarComponent(): React.ReactElement {
 
   return (
     <div>
-      <LogoIcon className={styles.logo} />
+      <a>
+        <div className={styles.logoBox}>
+          <LogoIcon className={styles.logo} />
+        </div>
+      </a>
+
       <nav>
         {navList.map((navItem, i) => (
           <a key={i} className={styles.navItem}>
             <div className={styles.contentsWrapper}>
               {navItem.img}
               <div className={styles.titleWrapper}>
-                <span>{navItem.title}</span>
+                <span className={styles.titleText}>{navItem.title}</span>
               </div>
             </div>
           </a>
