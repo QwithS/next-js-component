@@ -1,0 +1,106 @@
+
+.logoBox {
+  display: inline-flex;
+  min-width: 49px;
+  min-height: 49px;
+  align-items: center;
+  cursor: pointer;
+
+  .logo {
+    width: 1.5em;
+    min-width: 30px;
+    height: 2rem;
+    flex-grow: 1;
+    flex-shrink: 0;
+    align-items: flex-end;
+    color: rgba(29, 161, 242, 1);
+    fill: currentColor;
+    user-select: none;
+  }
+}
+
+.navItem {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  align-items: flex-start;
+  cursor: pointer;
+
+  .contentsWrapper {
+    display: flex;
+    max-width: 100%;
+    align-items: center;
+    padding: 10px;
+
+    svg {
+      display: inline-block;
+      max-width: 100%;
+      height: 1.75rem;
+      color: rgb(20, 23, 26);
+      fill: currentColor;
+      user-select: none;
+    }
+
+    .titleWrapper {
+      display: inline-block;
+      overflow: hidden;
+      min-width: 0;
+      max-width: 100%;
+      margin-right: 15px;
+      margin-left: 20px;
+      color: rgb(20, 23, 26);
+      font-size: 19px;
+      font-weight: bold;
+      line-height: 1.3125;
+      overflow-wrap: break-word; // 아직 헷깔림
+      text-overflow: ellipsis; // 속성 찾아보기
+      white-space: nowrap; // 아직 헷깔림
+    }
+
+    .titleText {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+      line-height: 1.3125;
+    }
+  }
+}
+
+.twitBtn {
+  display: flex;
+  width: 90%;
+  max-width: 100%;
+  min-height: 49px;
+  align-items: center;
+  justify-content: center;
+  margin: 5px 0;
+  background-color: rgb(29, 161, 242);
+  border-radius: 9999px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0 8px 28px;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.twitBtn:hover {
+  background-color: rgb(29, 145, 218);
+}
+
+.logoBox:hover {
+  background: rgba(29, 161, 242, 0.1);
+  border-radius: 9999px;
+}
+
+.navItem:hover {
+  .contentsWrapper {
+    background: rgba(29, 161, 242, 0.1);
+    border-radius: 9999px;
+  }
+
+  svg {
+    color: rgba(29, 161, 242, 1);
+  }
+
+  .titleText {
+    color: rgba(29, 161, 242, 1);
+  }
+}
