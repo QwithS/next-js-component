@@ -10,8 +10,13 @@ import NotiIcon from "public/img/nav-bar/notification.svg";
 import ProfileIcon from "public/img/nav-bar/profile.svg";
 import React from "react";
 
+export type MenuItem = {
+  title: string;
+  img: React.SVGProps<SVGSVGElement>;
+};
+
 export default function NavBarComponent(): React.ReactElement {
-  const navList = [
+  const navList: MenuItem[] = [
     { title: "홈", img: <HomeIcon /> },
     { title: "탐색하기", img: <ExploreIcon /> },
     { title: "알림", img: <NotiIcon /> },
@@ -42,6 +47,10 @@ export default function NavBarComponent(): React.ReactElement {
           </a>
         ))}
       </nav>
+
+      <a>
+        <div className={styles.twitBtn}>트윗</div>
+      </a>
     </div>
   );
 }

@@ -64,6 +64,27 @@
   }
 }
 
+.twitBtn {
+  display: flex;
+  width: 90%;
+  max-width: 100%;
+  min-height: 49px;
+  align-items: center;
+  justify-content: center;
+  margin: 5px 0;
+  background-color: rgb(29, 161, 242);
+  border-radius: 9999px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0 8px 28px;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.twitBtn:hover {
+  background-color: rgb(29, 145, 218);
+}
+
 .logoBox:hover {
   background: rgba(29, 161, 242, 0.1);
   border-radius: 9999px;
